@@ -1,0 +1,282 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/*******************************
+Body style
+************************************/
+
+body {
+  max-width: 1024px;
+  padding: 0;
+  margin: 0 auto;
+  width: 85%;
+}
+
+
+
+
+.gallery  {
+ margin: 0;
+}
+
+
+
+#myList {
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Lobster Two', 'sans-serif';
+}
+
+
+
+
+input {
+  font-family:'sans-serif';
+}
+
+
+
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+
+.lg-sub-html p {   
+  font-size: 14px; 
+}
+
+
+
+h1 {
+ text-align: center;
+ color: rgb(0, 144, 150);
+ text-shadow: 2px 2px 4px #000;
+ font-size: 2.2em;
+}
+
+
+
+input[type="search"] {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    border-radius: 2px;
+    color: rgb(0, 144, 150);
+    border: none;
+    background-image: url(../img/search.png);
+    background-position: 10px 10px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.gallery a {
+  padding-left: 0;
+  text-align: center;
+}
+
+
+
+.gallery a img {
+ width: 100%;
+ margin-bottom: 25px;
+ border-radius: 10px;
+}
+
+
+
+#search {
+  background-color: rgba(204, 204, 204, 0.23); 
+  transition: 1s;
+}
+
+.is-sticky #search  {
+  background-color: #fff;
+  box-shadow: -1px 2px 12px 1px rgba(0, 0, 0, 0.61)
+}
+
+
+/********************************
+Placeholder style 
+************************************/
+
+::-webkit-input-placeholder {
+  font-size: 1rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.9);
+  text-align: left;
+}
+
+
+:-moz-placeholder {
+  font-size: 1rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.9);
+  text-align: left;
+
+}
+
+::-moz-placeholder {
+  font-size: 1rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.9);
+  text-align: left;
+}
+
+
+
+:-ms-input-placeholder {
+  font-size: 1rem;
+  font-style:italic; 
+  color:rgba(153, 153, 153, 0.9);
+  text-align: left;
+}
+
+
+
+
+
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+
+@media (min-width: 768px) {
+ .gallery a img {
+  width: 40%;
+  float: left;
+  margin: 31px;
+  }
+
+
+  .gallery {
+  margin-left: 13px;
+  margin-right: -8px;
+ }
+ 
+
+.lg-sub-html p {   
+  font-size: 22px; 
+}
+
+
+ h1 {
+    font-size: 3em;
+  }
+
+
+
+h3 {
+  
+  font-size: 1.4rem;
+}
+
+
+
+input[type="search"] {
+    width: 89%;
+    margin-left: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    color:rgb(0, 144, 150);
+    border: none;
+    background-color: rgba(204, 204, 204, 0.23);
+    background-image: url(../img/search.png);
+    background-position: 10px 10px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+}
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+ 
+  
+
+  .gallery a img {
+  width: 20%;
+  float: left;
+  margin: 20px;
+  }
+   
+
+ .gallery:hover img {
+   opacity: .6;
+   transition: all 0.4s;
+   transform: scale(.88);
+ }
+
+ .gallery img:hover {
+  transition: all 0.4s;
+  opacity: 1;
+  transform: scale(1) rotate(3deg);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.85);
+ }
+
+
+
+body {
+ background-color: rgba(204, 204, 204, 0.21);
+}
+
+/******************************************
+   Animated Search box
+*******************************************/
+
+form {
+ text-align: center;
+}
+
+input[type="search"] {
+    width: 10%;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 8px;
+    color:rgb(0, 144, 150);
+    border: none;
+    background-color: rgba(204, 204, 204, 0.23);
+    background-image: url(../img/search.png);
+    background-position: 10px 10px;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: width 0.3s ease-in;
+    transition: width 0.3s ease-in;
+}
+
+/* When the input field gets focus, width changes to 100% */
+input[type="search"]:focus {
+    width: 35%;
+}
+
+}
+
+/* ==============================================
+     Using the class remove for hide the img 
+=================================================*/
+
+
+.remove {
+  display:none;
+}
+
+
+
+
+
